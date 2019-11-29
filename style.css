@@ -1,0 +1,88 @@
+/* CSS used for JS - Jquery: */
+
+.container .img-container img.active {
+    display: block;
+}
+
+.dots-container i.active {
+    color: ivory;
+}
+
+/* CSS used in styling HTML page: */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    background-image: url(https://image.freepik.com/free-vector/vector-flower-seamless-pattern-background-elegant-texture-backgrounds-classical-luxury-old-fashioned-floral-ornament-seamless-texture-wallpapers-textile-wrapping_1217-380.jpg);
+}
+
+.container {
+    width: 80vh;
+    height: 80vh;
+    margin: 10vh auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrato {
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid cyan;
+}
+
+.quadrato:hover {
+    border: 3px solid cyan;
+}
+
+.rosso {
+    background-color: coral;
+}
+
+.blu {
+    background-color: teal;
+}
+
+.container .prev-arrow, .container .next-arrow {
+    animation-name: icon-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots-container {
+    height: 10vh;
+    animation-name: icon-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.fas:hover {
+    cursor: pointer;
+}
+
+@keyframes border-color {
+    0% {border-color: chartreuse}
+    25% {border-color: crimson}
+    50% {border-color: darkorange}
+    75% {border-color: aqua}
+    100% {border-color: chartreuse}
+}
+
+@keyframes icon-color {
+    0% {color: chartreuse}
+    25% {color: crimson}
+    50% {color: darkorange}
+    75% {color: aqua}
+    100% {color: chartreuse}
+}
